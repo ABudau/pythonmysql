@@ -8,7 +8,7 @@ class usuarios:
    cur.execute( "SELECT nombre, apellidos FROM usuarios" )
    rows=cur.fetchall()
    miConexion.close()
-   return json.dumps(rows)
+   return json.dumps(rows) 
 
  def insertar(self,nom,ape):
    miConexion = pymysql.connect(host='localhost', port=3307, user= 'root', passwd='88294697', db='nueva' )
